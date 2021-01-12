@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Nba Head to Head</title>
+        <!-- Meta-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Justin Lu">
+        <meta name="description" content="Head to Head aims to
+        simulate custom teams filled with popular Nba players and using
+        data from the Ball dont lie API and custom metrics, return the outcome.">
+        <meta property="og:description" content="Head to Head aims to
+        simulate custom teams filled with popular Nba players and using
+        data from the Ball dont lie API and custom metrics, return the outcome.">
+        <meta property="og:title" content="Head to Head">
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel="stylesheet">
+         <!-- CSS external -->
+        <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='css/main.css') }}">
+        <!-- JS external-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    </head>
+    <!-- Main Document -->
+    <body>
+        <header>
+            <div class ="container">
+                <div>
+                    <img src=https://1000logos.net/wp-content/uploads/2017/04/NBA-Logo.png width="350" height="150"
+                    alt="Nba logo" title="©Nba">
+                </div>
+                <div  style="text-align:right;">
+                    <header>
+                        <h1><strong>HEAD TO HEAD</strong></h1>
+                    </header>
+                </div>
+            </div>
+        </header>
+        <main>
+            <form onsubmit="return calculate();">
+                <!-- Drop down menu-->
+                <!-- All options stored in external JS file-->
+                <div class ="container">
+                    <!-- column 1-->
+                    <div>
+                        <span class="team"><strong>Team 1</strong></span>
+                        <!-- Point guard -->
+                        <div class="dropdown">
+                            <label for="pg-select">Select a point guard:</label>
+                            <select name="pg" id="pg-select">
+                            </select>
+                        </div>
+                        <!-- Shooting guard -->
+                        <div class="dropdown">
+                            <label for="sg-select">Select a shooting guard:</label>
+                            <select name="sg" id="sg-select">
+                            </select>
+                        </div>
+                        <!-- Small Forward -->
+                        <div class="dropdown">
+                            <label for="sf-select">Select a small forward:</label>
+                            <select name="sf" id="sf-select">
+                            </select>
+                        </div>
+                        <!-- Power Forward-->
+                        <div class="dropdown">
+                            <label for="pf-select">Select a power forward:</label>
+                            <select name="pf" id="pf-select">
+                            </select>
+                        </div>
+                        <!-- Center-->
+                        <div class="dropdown">
+                            <label for="c-select">Select a center:</label>
+                            <select name="c" id="c-select">
+                            </select>
+                        </div>
+                    </div>
+                    <!-- End column 1-->
+
+                    <!-- column 2-->
+                    <div style="text-align:right;">
+                        <span class="team"><strong>Team 2</strong></span>
+                        <!-- Point guard -->
+                        <div class="dropdown">
+                            <label for="pg-select">Select a point guard:</label>
+                            <select name="pg" id="pg2-select">
+                            </select>
+                        </div>
+                        <!-- Shooting guard -->
+                        <div class="dropdown">
+                            <label for="sg-select">Select a shooting guard:</label>
+                            <select name="sg" id="sg2-select">
+                            </select>
+                        </div>
+                        <!-- Small Forward -->
+                        <div class="dropdown">
+                            <label for="sf-select">Select a small forward:</label>
+                            <select name="sf" id="sf2-select">
+                            </select>
+                        </div>
+                        <!-- Power Forward-->
+                        <div class="dropdown">
+                            <label for="pf-select">Select a power forward:</label>
+                            <select name="pf" id="pf2-select">
+                            </select>
+                        </div>
+                        <!-- Center-->
+                        <div class="dropdown">
+                            <label for="c-select">Select a center:</label>
+                            <select name="c" id="c2-select">
+                            </select>
+                        </div>
+                    </div>
+                    <!-- End column 2-->
+                </div>
+                <div class="buttContainer">
+                    <div class="buttCenter">
+                        <input type="submit" id="mySubmit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p> Data sourced from
+                <a href="https://www.balldontlie.io/" title="Up to date statistics on the Nba">
+                    balldontlieAPI </a>
+            </p>
+        </footer>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
