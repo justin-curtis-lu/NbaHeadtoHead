@@ -1,2 +1,5 @@
 # NbaHeadtoHead
-Project uses Python scripts to source Nba player data from the Balldontlie API. Data then used with custom formulas to assign players values for our simulations. Web Application built with flask and deployed on AWS Elastic Beanstalk
+Application simulates the outcomes of user picked custom NBA teams. Players ratings Based off of statistics from the 2018-2019 Nba Season.
+
+
+http://nbah2h-env.eba-79yirzwu.us-west-2.elasticbeanstalk.com/
