@@ -5,3 +5,9 @@ Each player's values calculated using 2018 season averages in conjunction with p
 
 Click [this](http://nbahead2head.com/) to view application
 
+## Built With
+
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Web Framework
+* [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) - Deployment
+* [AWS Route 53](https://aws.amazon.com/route53/) - DNS
+* [balldontlie](https://www.balldontlie.io/#introduction) - API
